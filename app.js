@@ -28,6 +28,8 @@ maxNum.textContent = max;
 // Play again event listener
 game.addEventListener('mousedown', function(e){
   if(e.target.className === 'play-again') {
+    // clear input
+    guessInput.value = '';
     window.location.reload();
   }
 });
